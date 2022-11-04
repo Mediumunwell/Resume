@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shipley_E_Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+h6{
+font-family: 'Brush Script MT';
+}
+
+.h6{font-family: 'sans-serif';}
+
+
+/* I know we weren't meant to use styles, but for the sake of time
+since I already created this Resume HTML I have left it as is */
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.px_y{
+border: 2px yellow;
+}
+
+.p2 {
+  font-size: 14px;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+* {
+box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 10%;
+  padding: 10px;
+}
+
+/* Clearfix (clear floats) */
+.row2::after {
+  content: "";
+  clear: both;
+  display: table;
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Note -->
+<div style="background:yellow;padding:5px">
+  <h6 class="px_y" style="text-align:center">Resize the browser window to see the responsive effect.</h6>
+</div>
+
+<!-- Header -->
+<div class="header">
+  <h1>Evan Shipley-Friedt</h1>
+  <p>Resume with a <b>flexible</b> layout.</p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="https://www.linkedin.com/in/evan-shipley-friedt-4020b115b/"><img width=50 height=50 border=0 hspace=0 src="https://static-exp1.licdn.com/sc/h/1qg0x3jn7v2ic5nv4n6sbztrp"></img></a>
+  <a href="https://portfolium.com/eshipley"><img width=100 height=50 border=0 hspace=0 src="https://content-calpoly-edu.s3.amazonaws.com/careerservices/1/images/new_exploreservices/new_resourcetoolkit/portfolium/Copy%20of%20Portfolium_Logo_Vertical.png"></img></a>
+  <a href = "mailto: evanpmsheep@gmail.com"><img width=50 height=50 border=0 hspace=0 src="https://www.google.com/gmail/about/static/images/logo-gmail.png?cache=1adba63"></img></a>
+  <a href="https://en.wikiversity.org/wiki/3D_Scan/Kinect_Makerbot/Howard_Community_College/Spring2012/P1550jme"><img width=50 height=50 border=0 hspace=0 src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/1280px-Wikiversity-logo.svg.png"></img></a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <p>Photo of...</p>
+    <div class="fakeimg" style="height:140px;width:165px;"><img width=125 height=100 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqlpxbPkSb5N5LGw9vgiYyBD23xz39rINIhXjFTr3UQ4gW-uklCeL5bmFOaTH-Mn_ykTE&usqp=CAU"></img></div>
+    <p>what it's like living in western Maryland</p>
+    <h2>Goals</h2>
+    <h5>Career Objective: Aerospace Engineer</h5>
+    <div class="fakeimg" style="height:190px;width:240px;"><img width=200 height=150 src="https://64.media.tumblr.com/96026fbb2f78741748e1f74c7f712287/10fb61fcbf660709-53/s640x960/580045ed065dd401d584b57a268314b08b01d583.jpg"></img></div><br>
+    <p>My plan to install solar panels on my roof in Beltsville.</p>
+    <div class="fakeimg" style="height:190px;width:240px;"><a href="https://drive.google.com/drive/folders/14DBn_DCtliRjUyBxZ_fPAjgeuyAm291v?usp=sharing"><img width=200 height=150 src="https://64.media.tumblr.com/8574df09274b6be7a00213ac70d18731/60a262154254d0da-07/s1280x1920/0aa29513c075648edc71b583acbc81765551afc2.jpg"></a></img></div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+    <h2>Education</h2>
+    <p><b>University of Maryland, College Park, MD — Astronomy & Physics</b><br>
+      August 2019 - Expected December 2023</p>
+      <p class="p2">Career related courses: Intro to Python, Computational Astrophysics, Theoretical Astrophysics, Modern Physics, Introduction to Computer Programming via the Web, Math Methods for Physics II, Observational Astronomy, Intro to Astronomy II, Experimental Physics: Mechanics & Heat, Experimental Physics: Optics, Physics: Waves, Physics: Fields<br>
+    <p><b>Howard Community College, Columbia, MD — Engineering</b><br>
+      August 2008 - May 2017</p>
+      <p class="p2">Career related courses: Physics III, Calculus III, Intro to MATLAB, Intro to Engineering, Astronomy, Differential Equations, Thermodynamics, Mechanics of Materials, Dynamics, Statics<br>
+    <p><b>Garrett College, Oakland, MD — Distance Learning</b><br>
+      August 2007 - May 2008</p>
+    <p><b>Southern Garrett High School, Oakland, MD — Diploma</b><br>
+      August 2004 - June 2008</p>
+      <p class="p2">Career related courses: Auto-Computer Aided Design, Mechanical Drafting, Technology Education, AP Physics II<br></p>
+    <br>
+
+    <h2>Projects</h2>
+
+    <h4>Click an image to proceed to the project itself</h4>
+
+    <h5>Project Design: Pressure Vessel (Stress and Drop Test) - 2017</h5>
+    <div class="row2">
+    <div class="column" style="height:240px;width:300px;background-color: #aaa;
+    padding: 20px;"><a href="https://docs.google.com/document/d/14IKrEtKFtsRT2x1U8ZPhOJrNNbf-YXzraQ3ykSQYdBM/edit?usp=sharing">
+      <img width=240 height=200 src="https://64.media.tumblr.com/691e5f9909ddf3796a88633785b2dba2/20f52cb1d9649658-95/s540x810/582ecfaf054977ab1db5e183d6b56fa7975fe38a.png" style="width:100%"></a></img></div>
+    <div class="column" style="height:240px;width:300px;background-color: #aaa;
+    padding: 20px;"><a href="https://docs.google.com/document/d/14IKrEtKFtsRT2x1U8ZPhOJrNNbf-YXzraQ3ykSQYdBM/edit?usp=sharing">
+      <img width=222 height=200 src="https://64.media.tumblr.com/e36ea610f23cbb53e1b4a4e9db46ccab/20f52cb1d9649658-67/s540x810/32178d40a3cf038efb77fe4f2f236e6705ba9049.pnj" style="width:100%"></a></img></div>
+    <div class="column" style="height:240px;width:300px;background-color: #aaa;
+    padding: 20px;"><a href="https://docs.google.com/document/d/14IKrEtKFtsRT2x1U8ZPhOJrNNbf-YXzraQ3ykSQYdBM/edit?usp=sharing">
+      <img width=222 height=200 src="https://64.media.tumblr.com/ba220f42c05b85ce6b6c31a8e10ab3f0/20f52cb1d9649658-8c/s540x810/e6daa4f4b27630aec3a7520ef908f220ebb63553.jpg" style="width:100%"></a></img></div>
+    <div class="column" style="height:240px;width:300px;background-color: #aaa;
+    padding: 20px;"><a href="https://docs.google.com/document/d/14IKrEtKFtsRT2x1U8ZPhOJrNNbf-YXzraQ3ykSQYdBM/edit?usp=sharing">
+      <img width=222 height=200 src="https://64.media.tumblr.com/4653ec415bb9e5b801d9b34a8427e438/20f52cb1d9649658-60/s540x810/4835af943d3d6e0b38611155b684c401f279bef6.jpg" style="width:100%"></a></img></div>
+    <div class="column" style="height:240px;width:300px;background-color: #aaa;
+    padding: 20px;"><a href="https://docs.google.com/document/d/14IKrEtKFtsRT2x1U8ZPhOJrNNbf-YXzraQ3ykSQYdBM/edit?usp=sharing">
+      <img width=222 height=200 src="https://64.media.tumblr.com/90fa15a54d1ed95a4506aaa5a76eb8bd/20f52cb1d9649658-a8/s540x810/6abc9417a8dda17c5a774b298a789307d1335d54.jpg" style="width:100%"></a></img></div>
+    <div class="column" style="height:240px;width:300px;background-color: #aaa;
+    padding: 20px;"><a href="https://docs.google.com/document/d/14IKrEtKFtsRT2x1U8ZPhOJrNNbf-YXzraQ3ykSQYdBM/edit?usp=sharing">
+      <img width=222 height=200 src="https://64.media.tumblr.com/fd4dbe2079137954b6ca3e10af6fa208/20f52cb1d9649658-11/s540x810/49217ae8217f22f5d497b5a3194c1d5a20358b6d.jpg" style="width:100%"></a></img></div>
+    </div>
+    <br>
+    <h5>Peer Reviewed Article: Comparitive Brightness and Size Analysis of NGC 7814 (The Little Sombrero Galaxy) - 2020</h5>
+    <div class="row2">
+    <div class="column" style="height:240px;width:620px;background-color: #aaa;
+    padding: 20px;"><a href="https://docs.google.com/document/d/1YBqvLXZ3IDNXmpz-OwtNloVjidFwRrFMLUR7AXUdJqE/edit?usp=sharing">
+      <img width=240 height=200 src="https://64.media.tumblr.com/2beb544069d3aaf892e53e833fb314e2/54134090f6b3461d-fb/s540x810/d940699530fe7815d7212de4a7b463f1cbdcff54.jpg" style="width:100%"></a></img></div>
+    </div>
+    <div class="row2">
+    <div class="column" style="height:240px;width:320px;background-color: #aaa;
+    padding: 20px;"><a href="https://docs.google.com/document/d/1YBqvLXZ3IDNXmpz-OwtNloVjidFwRrFMLUR7AXUdJqE/edit?usp=sharing">
+      <img width=240 height=200 src="https://64.media.tumblr.com/17333951b26c36a22a4180d23fd0a72c/54134090f6b3461d-e7/s500x750/76dc08260e98e7e4594e6a51d6c4ce274a14f74e.jpg" style="width:100%"></a></img></div>
+    <div class="column" style="height:240px;width:300px;background-color: #aaa;
+    padding: 20px;"><a href="https://docs.google.com/document/d/1YBqvLXZ3IDNXmpz-OwtNloVjidFwRrFMLUR7AXUdJqE/edit?usp=sharing">
+      <img width=240 height=200 src="https://64.media.tumblr.com/7f46a5ba8d51ed645ec389e40a4fbed4/54134090f6b3461d-95/s400x600/983e6a56b44d759169e5f1dbc480ed8ca5b7b264.jpg" style="width:100%"></a></img></div>
+    <div class="column" style="height:240px;width:320px;background-color: #aaa;
+    padding: 20px;"><a href="https://docs.google.com/document/d/1YBqvLXZ3IDNXmpz-OwtNloVjidFwRrFMLUR7AXUdJqE/edit?usp=sharing">
+      <img width=240 height=200 src="https://64.media.tumblr.com/1c15e7106032ed95941193d0c195d964/54134090f6b3461d-78/s400x600/2e2306ebe11dcafe1ff3e16b212a5bae2739f694.jpg" style="width:100%"></a></img></div>
+    <div class="column" style="height:240px;width:300px;background-color: #aaa;
+    padding: 20px;"><a href="https://docs.google.com/document/d/1YBqvLXZ3IDNXmpz-OwtNloVjidFwRrFMLUR7AXUdJqE/edit?usp=sharing">
+      <img width=240 height=200 src="https://64.media.tumblr.com/48c9859da2e00c9b98ad9ba3686a286f/54134090f6b3461d-3a/s540x810/ed14acae1a6ec5b7e05a8f85f38d7d656a295c22.jpg" style="width:100%"></a></img></div>
+    </div>
+    <br>
+    <h5>Peer Reviewed Article: Analysis of the Period Amplitude Relationship in Mira Variables - 2020</h5>
+    <div class="row2">
+    <div class="column" style="height:240px;width:620px;background-color: #aaa;
+    padding: 20px;"><a href="https://docs.google.com/document/d/1GP3R1wNoe5X1oQ8nmHK6iSrc5Ipuf8wPneNCUVSw6QU/edit?usp=sharing">
+      <img width=260 height=200 src="https://64.media.tumblr.com/79713fdc480edf5b127fa3fe33a24fcb/8fd917d7fd828955-35/s540x810/4129a91ab6e7960adabea06332bd648ef1ff6d5a.jpg" style="width:100%"></a></img></div>
+    </div>
+    <div class="row2">
+    <div class="column" style="height:240px;width:320px;background-color: #aaa;
+    padding: 20px;"><a href="https://docs.google.com/document/d/1GP3R1wNoe5X1oQ8nmHK6iSrc5Ipuf8wPneNCUVSw6QU/edit?usp=sharing">
+      <img width=260 height=200 src="https://64.media.tumblr.com/9924231a7827e76736095b21bec5609e/8fd917d7fd828955-b0/s500x750/509da9327230e5253720b24681e8f3b83a0467cd.jpg" style="width:100%"></a></img></div>
+    <div class="column" style="height:240px;width:300px;background-color: #aaa;
+    padding: 20px;"><a href="https://docs.google.com/document/d/1GP3R1wNoe5X1oQ8nmHK6iSrc5Ipuf8wPneNCUVSw6QU/edit?usp=sharing">
+      <img width=240 height=200 src="https://64.media.tumblr.com/4d7ddb264f2443c0f76a48f88ef5b348/8fd917d7fd828955-41/s400x600/8077468c3e6a8014f18a4c1b8049fab482495aa2.jpg" style="width:100%"></a></img></div>
+    <div class="column" style="height:240px;width:320px;background-color: #aaa;
+    padding: 20px;"><a href="https://docs.google.com/document/d/1GP3R1wNoe5X1oQ8nmHK6iSrc5Ipuf8wPneNCUVSw6QU/edit?usp=sharing">
+      <img width=240 height=200 src="https://64.media.tumblr.com/2fce39ad6d8ee106a9fc6f9984a7436a/8fd917d7fd828955-ed/s400x600/6d1e76a1373db4be35240d0545cc4f4ab9e81aed.jpg" style="width:100%"></a></img></div>
+    <div class="column" style="height:240px;width:300px;background-color: #aaa;
+      padding: 20px;"><a href="https://docs.google.com/document/d/1GP3R1wNoe5X1oQ8nmHK6iSrc5Ipuf8wPneNCUVSw6QU/edit?usp=sharing">
+      <img width=240 height=200 src="https://64.media.tumblr.com/ecc6242b6b1e75972b7104412529c9f0/8fd917d7fd828955-fd/s400x600/5c628241580d253eda47d2a130fef3660f7584af.gifv" style="width:100%"></a></img></div>
+    </div>
+    <br>
+    <h5>Theoretical Astrophysics Derivation: Chandrasekhar Mass Limit - 2020</h5>
+    <div class="row2">
+    <div class="column" style="height:240px;width:640px;background-color: #aaa;
+    padding: 20px;"><a href="https://drive.google.com/file/d/1AzEu44acBTtZ-TdAsH6O9s3lbSC1d3Q9/view?usp=sharing">
+      <img width=260 height=200 src="https://64.media.tumblr.com/7fae715c68ae67cfb0d2ce9f0b112995/06884b7f5d492308-55/s540x810/fcefd8da89358cfb23dd5e20301da1cdb6218faf.jpg" style="width:100%"></a></img></div>
+    </div>
+    <div class="row2">
+    <div class="column" style="height:240px;width:640px;background-color: #aaa;
+    padding: 20px;"><a href="https://drive.google.com/file/d/1AzEu44acBTtZ-TdAsH6O9s3lbSC1d3Q9/view?usp=sharing">
+      <img width=240 height=200 src="https://64.media.tumblr.com/3205abcc152c633ccf9c455572c7eb6b/06884b7f5d492308-b0/s540x810/05c920f16a0b8ce0e453fb758833ae400e93bf94.jpg" style="width:100%"></a></img></div>
+    </div>
+    <div class="row2">
+    <div class="column" style="height:240px;width:320px;background-color: #aaa;
+    padding: 20px;"><a href="https://drive.google.com/file/d/1AzEu44acBTtZ-TdAsH6O9s3lbSC1d3Q9/view?usp=sharing">
+      <img width=240 height=200 src="https://64.media.tumblr.com/00bd5f7ad51b5a7b7c4d5dbbc5b8b222/06884b7f5d492308-95/s400x600/aae80e09423813a41aaf57bbd25f60165c47d33d.jpg" style="width:100%"></a></img></div>
+    <div class="column" style="height:240px;width:320px;background-color: #aaa;
+    padding: 20px;"><a href="https://drive.google.com/file/d/1AzEu44acBTtZ-TdAsH6O9s3lbSC1d3Q9/view?usp=sharing">
+      <img width=240 height=200 src="https://64.media.tumblr.com/1ec5bacee994d4f6d27cfe535aa00f44/06884b7f5d492308-9a/s400x600/4860b29a6f5f8969b420633a132076af1a72a156.jpg" style="width:100%"></a></img></div>
+    <div class="column" style="height:240px;width:320px;background-color: #aaa;
+    padding: 20px;"><a href="https://drive.google.com/file/d/1AzEu44acBTtZ-TdAsH6O9s3lbSC1d3Q9/view?usp=sharing">
+      <img width=240 height=200 src="https://64.media.tumblr.com/adc1bfc3295f44651e27bf5c5a16f6e2/06884b7f5d492308-d5/s400x600/e811ba9ecc923f2fa8bad2ddc7b6b9deb75784e7.gifv" style="width:100%"></a></img></div>
+    <div class="column" style="height:240px;width:320px;background-color: #aaa;
+    padding: 20px;"><a href="https://drive.google.com/file/d/1AzEu44acBTtZ-TdAsH6O9s3lbSC1d3Q9/view?usp=sharing">
+      <img width=240 height=200 src="https://64.media.tumblr.com/42ddbb477fb09f6c980eeb414549a558/06884b7f5d492308-c9/s400x600/4c717b887b7ce070aeb4e1a0526dab79b51ac9cc.jpg" style="width:100%"></a></img></div>
+      <div class="column" style="height:280px;width:320px;background-color: #aaa;
+      padding: 20px;"><a href="https://drive.google.com/file/d/1AzEu44acBTtZ-TdAsH6O9s3lbSC1d3Q9/view?usp=sharing">
+        <img width=240 height=240 src="https://64.media.tumblr.com/14e872778cb312f26d9b8c266e710f55/06884b7f5d492308-89/s400x600/25779d4c1a8b4065c8810ac647d3357603f89159.jpg" style="width:100%"></a></img></div>
+    </div>
+    <br>
+    <h2>National Engineers Week</h2>
+    <h5>Kinex Eiffel Tower & A-T-A-T, 2011-2012</h5>
+    <div class="row2">
+    <div class="column" style="height:240px;width:262px;background-color: #aaa;
+    padding: 20px;"><img width=222 height=200 src="https://64.media.tumblr.com/e70e55133ac52b10e705bd54e3154c81/05c5e24e01dcdf20-6d/s540x810/eacadbb06c32dd1e75ca9e281ece0cb15511e040.jpg" style="width:100%"></img></div>
+    <div class="column" style="height:240px;width:262px;background-color: #aaa;
+    padding: 20px;"><img width=222 height=200 src="https://static.hollywoodreporter.com/sites/default/files/2013/07/despicable_me_2_3.jpg" style="width:100%"></img></div>
+    <div class="column" style="height:240px;width:262px;background-color: #aaa;
+    padding: 20px;"><img width=222 height=200 src="https://64.media.tumblr.com/64300fc80cabff501bb02b7753a4a659/82c7a9fc6868416f-06/s540x810/a3a0a9d959590d15813825e925b32523be64c50e.jpg" style="width:100%"></img></div>
+    </div>
+<!-- Footer -->
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
