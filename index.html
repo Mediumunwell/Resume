@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Evan's Resume</title>
+<title>index</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -14,6 +14,7 @@ font-family: 'Brush Script MT';
 
 .h6{font-family: 'sans-serif';}
 
+
 /* Style the body */
 body {
   font-family: Arial;
@@ -21,21 +22,26 @@ body {
 }
 
 .px_y{
+font-size: 20px;
 border: 2px yellow;
-flex-wrap: wrap;
+background: #68eef4;
+margin: 0;
+width: 100%
 }
 
 .p2 {
   font-size: 14px;
+  margin: 0;
+  width: 100%
 }
 
 /* Header/logo Title */
 .header {
-  flex: 100%;
   padding: 60px;
   text-align: center;
   background: #1abc9c;
   color: white;
+  width: 100%
 }
 
 /* Style the top navigation bar */
@@ -78,6 +84,7 @@ flex-wrap: wrap;
   flex: 75%;
   background-color: white;
   padding: 20px;
+  margin: 0;
 }
 
 /* Fake image, just for this example */
@@ -99,7 +106,7 @@ box-sizing: border-box;
 
 .column {
   float: left;
-  width: 10%;
+  width: 50%;
   padding: 10px;
 }
 
@@ -108,14 +115,13 @@ box-sizing: border-box;
   content: "";
   clear: both;
   display: table;
+}
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-  .row, .navbar {
-    flex-direction: column;
-  }
-    .side, .main, , .navbar, .header, .px_y{
-    flex: 100%;
+  .row {
+    flex: 50%
+    /*flex-direction: column;*/
   }
 }
 </style>
@@ -123,15 +129,18 @@ box-sizing: border-box;
 <body>
 
 <!-- Note -->
-<div style="background:yellow;padding:5px">
+<div class=row>
+<div style="">
   <h6 class="px_y" style="text-align:center">Resize the browser window to see the responsive effect.</h6>
-</div>
+</row>
 
 <!-- Header -->
+<div class=row>
 <div class="header">
   <h1>Evan Shipley-Friedt</h1>
   <p>Resume with a <b>flexible</b> layout.</p>
 </div>
+</row>
 
 <!-- Navigation Bar -->
 <div class="navbar">
@@ -153,8 +162,8 @@ box-sizing: border-box;
     <div class="fakeimg" style="height:190px;width:240px;"><img width=200 height=150 src="https://64.media.tumblr.com/96026fbb2f78741748e1f74c7f712287/10fb61fcbf660709-53/s640x960/580045ed065dd401d584b57a268314b08b01d583.jpg"></img></div><br>
     <p>My plan to install solar panels on my roof in Beltsville.</p>
     <div class="fakeimg" style="height:190px;width:240px;"><a href="https://drive.google.com/drive/folders/14DBn_DCtliRjUyBxZ_fPAjgeuyAm291v?usp=sharing"><img width=200 height=150 src="https://64.media.tumblr.com/8574df09274b6be7a00213ac70d18731/60a262154254d0da-07/s1280x1920/0aa29513c075648edc71b583acbc81765551afc2.jpg"></a></img></div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
   </div>
+
   <div class="main">
     <h2>Education</h2>
     <p><b>University of Maryland, College Park, MD — Astronomy & Physics</b><br>
