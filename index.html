@@ -21,9 +21,30 @@ body {
   margin: 0;
 }
 
+details > summary {
+  padding: 4px;
+  width: 200px;
+  background-color: #eeeeee;
+  border: none;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+}
+
+details > p {
+  background-color: #eeeeee;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 2px #bbbbbb;
+}
+
 .px_y{
 font-size: 20px;
 background: #68eef4;
+margin: 0;
+width: 100%
+}
+.px_z{
+font-size: 20px;
 margin: 0;
 width: 100%
 }
@@ -131,7 +152,7 @@ box-sizing: border-box;
 <div class=row>
 <div style="">
   <h6 class="px_y" style="text-align:center">Resize the browser window to see the responsive effect.</h6>
-</row>
+
 
 <!-- Header -->
 <div class=row>
@@ -139,7 +160,6 @@ box-sizing: border-box;
   <h1>Evan Shipley-Friedt</h1>
   <p>Resume with a <b>flexible</b> layout.</p>
 </div>
-</row>
 
 <!-- Navigation Bar -->
 <div class="navbar">
@@ -155,12 +175,38 @@ box-sizing: border-box;
     <h2>About Me</h2>
     <p>Photo of...</p>
     <div class="fakeimg" style="height:140px;width:165px;"><img width=125 height=100 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqlpxbPkSb5N5LGw9vgiYyBD23xz39rINIhXjFTr3UQ4gW-uklCeL5bmFOaTH-Mn_ykTE&usqp=CAU"></img></div>
-    <p>what it's like living in western Maryland</p>
-    <h2>Goals</h2>
-    <h5>Career Objective: Aerospace Engineer</h5>
+     <p>what it's like living in western Maryland</p>
+     <h2>Goals</h2>
+     <h5>Career Objective: Aerospace Engineer</h5>
     <div class="fakeimg" style="height:190px;width:240px;"><img width=200 height=150 src="https://64.media.tumblr.com/96026fbb2f78741748e1f74c7f712287/10fb61fcbf660709-53/s640x960/580045ed065dd401d584b57a268314b08b01d583.jpg"></img></div><br>
-    <p>My plan to install solar panels on my roof in Beltsville.</p>
+     <p>My plan to install solar panels on my roof in Beltsville.</p>
     <div class="fakeimg" style="height:190px;width:240px;"><a href="https://drive.google.com/drive/folders/14DBn_DCtliRjUyBxZ_fPAjgeuyAm291v?usp=sharing"><img width=200 height=150 src="https://64.media.tumblr.com/8574df09274b6be7a00213ac70d18731/60a262154254d0da-07/s1280x1920/0aa29513c075648edc71b583acbc81765551afc2.jpg"></a></img></div><br>
+    <div>
+      <details>
+        <summary style="font-family:'Brush Script MT'">Skills</summary>
+        <p>Coding in:<br>
+           Python, C/Linux/bash/cSh, C++, MATLAB, HTML, CSS, JAVA, LUA, JASS, VJASS</p>
+
+        <p>Technical Troubleshooting</p>
+
+        <p>3D Modeling and Printing</p>
+
+        <p>Communication and Customer Service</p>
+
+        <p>Teamwork and Leadership</p>
+  </div>
+  <br>
+  <div>
+    <details>
+      <summary style="font-family:'Brush Script MT'">Awards</summary>
+      <p>2007 National Finalist for U.S. National Chemistry Olympiad</p>
+
+      <p>HCC Math Competition 3rd place</p>
+
+      <p>Distinguished Honor Roll HS and College</p>
+
+      <p>5/5 Advanced Placement Physics</p>
+</div>
   </div>
 
   <div class="main">
@@ -183,6 +229,16 @@ box-sizing: border-box;
     <h4>Click an image to proceed to the project itself</h4>
 
     <h5>Project Design: Pressure Vessel (Stress and Drop Test) - 2017</h5>
+    <div class="row2">
+    <div class="column" style="height:220px;width:600px;background-color: #aaa;
+    padding: 20px;"><a href="https://docs.google.com/document/d/14IKrEtKFtsRT2x1U8ZPhOJrNNbf-YXzraQ3ykSQYdBM/edit?usp=sharing">
+      <img width=620 height=180 src="https://64.media.tumblr.com/dc3b474ec4a5664de5d22a9189817100/20f52cb1d9649658-62/s400x600/249e8a5ad054ddeeba3d6fbc21a02ae0694a3168.pnj" style="width:100%"></a></img></div>
+    </div>
+    <div class="row2">
+    <div class="column" style="height:240px;width:600px;background-color: #aaa;
+    padding: 20px;"><a href="https://docs.google.com/document/d/14IKrEtKFtsRT2x1U8ZPhOJrNNbf-YXzraQ3ykSQYdBM/edit?usp=sharing">
+      <img width=620 height=200 src="https://64.media.tumblr.com/47bc7bb1b1afc0db7696849d36e3c4b7/20f52cb1d9649658-fa/s400x600/26e4db7d8aed4c8ca827869be4f8a10990f58d31.pnj" style="width:100%"></a></img></div>
+    </div>
     <div class="row2">
     <div class="column" style="height:240px;width:300px;background-color: #aaa;
     padding: 20px;"><a href="https://docs.google.com/document/d/14IKrEtKFtsRT2x1U8ZPhOJrNNbf-YXzraQ3ykSQYdBM/edit?usp=sharing">
@@ -208,7 +264,7 @@ box-sizing: border-box;
       <img width=222 height=200 src="https://64.media.tumblr.com/fd4dbe2079137954b6ca3e10af6fa208/20f52cb1d9649658-11/s540x810/49217ae8217f22f5d497b5a3194c1d5a20358b6d.jpg" style="width:100%"></a></img></div>
     </div>
     <br>
-    <h5>Python Project: Apollo 13 (Spaceflight Simulation) - 2017</h5>
+    <h5>Python Project: Apollo 13 (Spaceflight Simulation) - 2019</h5>
     <div class="row2">
     <div class="column" style="height:540px;width:640px;background-color: #aaa;
     padding: 20px;"><a href="Apollo_13_Project.html">
@@ -327,9 +383,61 @@ box-sizing: border-box;
     <div class="column" style="height:355px;width:310px;background-color: #aaa;
     padding: 20px;"><img width=230 height=310 src="https://64.media.tumblr.com/64300fc80cabff501bb02b7753a4a659/82c7a9fc6868416f-06/s540x810/a3a0a9d959590d15813825e925b32523be64c50e.jpg" style="width:100%"></img></div>
     </div>
+    <br>
 <!-- Footer -->
-<div class="footer">
-  <h2>Footer</h2>
+<details>
+  <summary style="font-family:'Brush Script MT'">Philosophy</summary>
+<div style="">
+  <h6 class="px_y" style="text-align:center">In the words of:</h6>
+  <p class="px_z" style="font-family:'Brush Script MT'">Einstein:</p>
+  <p class="px_y" style="font-family:'Brush Script MT'">"A human being is a part of the whole called by us universe, a part limited in time and space. He experiences himself, his thoughts and feeling as something separated from the rest, a kind of optical delusion of his consciousness. This delusion is a kind of prison for us, restricting us to our personal desires and to affection for a few persons nearest to us. Our task must be to free ourselves from this prison by widening our circle of compassion to embrace all living creatures and the whole of nature in its beauty."</p>
+  <p class="px_z" style="font-family:'Brush Script MT'">“Try not to become a man of success. Rather become a man of value.”</p>
+  <p class="px_y" style="font-family:'Brush Script MT'">“The important thing is not to stop questioning. Curiosity has its own reason for existence. One cannot help but be in awe when he contemplates the mysteries of eternity, of life, of the marvelous structure of reality. It is enough if one tries merely to comprehend a little of this mystery each day.""</p>
+  <p class="px_z" style="font-family:'Brush Script MT'">“You never fail until you stop trying.”</p>
+  <p class="px_y" style="font-family:'Brush Script MT'">“It is not that I'm so smart. But I stay with the questions much longer.”</p>
+  <p class="px_z" style="font-family:'Brush Script MT'">“I know not with what weapons World War III will be fought, but World War IV will be fought with sticks and stones.”</p>
+  <p class="px_y" style="font-family:'Brush Script MT'">“The measure of intelligence is the ability to change.”</p>
+  <p class="px_z" style="font-family:'Brush Script MT'">Bruce Lee:</p>
+  <p class="px_y" style="font-family:'Brush Script MT'">"As you think, so shall you become."</p>
+  <p class="px_z" style="font-family:'Brush Script MT'">"To know oneself is to study oneself in action with another person."</p>
+  <p class="px_y" style="font-family:'Brush Script MT'">"Real living is living for others."</p>
+  <p class="px_z" style="font-family:'Brush Script MT'">"Take no thought of who is right or wrong or who is better than. Be not for or against."</p>
+  <p class="px_y" style="font-family:'Brush Script MT'">"Do not pray for an easy life, pray for the strength to endure a difficult one."</p>
+  <p class="px_z" style="font-family:'Brush Script MT'">"If you love life don't waste time, for time is what life is made up of."</p>
+</div>
+<p></p>
+<div class="px_z" style="font-family:'Brush Script MT'">Philosophy 101
+  <a href="https://drive.google.com/drive/folders/0B--ICMzRCmuJaTJBUnVlZzdhMGc?resourcekey=0-8jPqlXi7NLynGVWCtsvPBA&usp=sharing">Short Essay</a> &
+  <a href="https://drive.google.com/drive/folders/0B--ICMzRCmuJaTJBUnVlZzdhMGc?resourcekey=0-8jPqlXi7NLynGVWCtsvPBA&usp=sharing">Test Essays</a>
+</details>
+<br>
+<div>
+  <h3>Work Experience</h3>
+  <details>
+    <summary style="font-family:'Brush Script MT'">besides building K'NEX to take over the world with the help of minions...</summary>
+    <p><b>M-NCPPC</b>, Beltsville, MD — Desk Help</p>
+    <p>June 2012 - Date</p>
+      <p class=p2>Manage my local Community Center on weekends,<br>
+        perform weekly maintenance, set up for events,<br>
+        register patrons for classes, answer calls, sound<br>
+        engineer for some performances, help with ceramics<br>
+        and painting</p><br>
+    <p><b>Tower Federal</b>, Laurel, MD — Service Rep</p>
+    <p>December 2017 - June 2018</p>
+      <p class=p2>Assisted members with financial accounts</p><br>
+      <p><b>Gumbusters</b>, Ellicott City, MD — Cleaner</p>
+      <p>June 2017 - June 2019</p>
+      <p class=p2>Temporary summer job cleaning sidewalks</p><br>
+      <p><b>KP Duty</b>, Beltsville, MD — Carpentry</p>
+      <p>June 2011 - August 2011, June 2012 - August 2012</p>
+      <p class=p2>Assisted in restoring St. Thomas Apostle Church<br>
+        Landscaping and Construction work</p><br>
+    <p><b>Dribbler’s Club</b>, Oakland, MD — Instructor</p>
+    <p>June 2005 - August 2005</p>
+      <p class=p2>Taught younger children basketball techniques</p><br>
+    <p class=p2>My list is short on quality work experience because I have visited my dad across country for long periods almost every year to help him,
+       I enjoy my job at the community center helping those in my neighborhood while also having time to study,
+      and I suffered from a serious stomach problem that took over a year to resolve in 2020.</p>
 </div>
 
 </body>
